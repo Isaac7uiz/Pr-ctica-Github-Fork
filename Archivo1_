@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Definición de la estructura Libro
+struct Libro {
+    string titulo;
+    string autor;
+    int anioPublicacion;
+};
+
+int main() {
+    // Declaración de una instancia de Libro
+    Libro libro1;
+
+    // Acceso y asignación de valores a los miembros
+    libro1.titulo = "Cien años de soledad";
+    libro1.autor = "Gabriel García Márquez";
+    libro1.anioPublicacion = 1967;
+
+    // Impresión de la información del libro
+    cout << "Información del libro:" << endl;
+    cout << "Título: " << libro1.titulo << endl;
+    cout << "Autor: " << libro1.autor << endl;
+    cout << "Año de publicación: " << libro1.anioPublicacion << endl;
+
+    return 0;
+}
